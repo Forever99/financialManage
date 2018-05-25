@@ -1,0 +1,64 @@
+@CHARSET "UTF-8";
+
+/*手机端适配问题：修改日期:2018-04-12*/
+
+.main-box{/*登录主框架*/
+	/*background-color:#e6e6e6 ;*/
+	border:1px solid #e6e6e6;
+	/* width:400px;
+	height:600px; */
+	margin:auto;/*整体 自动居中*/
+	margin-top:10px;/*上边距*/
+	/*margin:300px;外边距*/
+	padding:15px;/*内边距*/
+}
+
+
+#logo{/*logo设置*/
+	/* width:300px;
+	height:70px; */
+	/* margin-left:30px; */
+	padding:auto;
+}
+
+#msgLabel{/*错误标签*/
+	color:red;
+}
+
+#icon{/*icon标签*/
+	width:30px;
+}
+.form-control{/*input标签*/
+	height:40px;
+}
+
+.registbtn{/*注册按钮*/
+	width:40%;
+	height:40px;
+	/* width:100px;
+	margin-left:40px; */
+}
+
+.resetbtn{/*重置按钮*/
+	width:40%;
+ 	height:40px;
+	/* width:100px; */
+	/* margin-left:40px; */
+	margin-left:15%;
+}
+
+.a{/*a标签设置*/
+	text-align:right;
+	margin-right:10px;
+}
+
+#sexLabel{/*性别标签设置*/
+	font-size: 18px;
+	font-family: '宋体';
+	margin-left:8px;
+	margin-right:20px;
+}
+
+.rightradio{/*性别单选框设置*/
+	margin-left:30px;
+}

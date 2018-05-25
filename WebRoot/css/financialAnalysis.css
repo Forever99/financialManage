@@ -1,0 +1,81 @@
+@CHARSET "UTF-8";
+
+#monthTitle{
+	background-color: #F0AD4E;
+}
+
+
+
+#yearDiv,#monthDiv{
+	margin-left:0px;
+	text-align: left;
+	margin-top:4px;
+}
+
+
+
+.monthInput{
+	height:34px;
+	width:30%;
+}
+
+#container_month_chart_left{
+	height:200px; 
+	/* width:200px;
+	margin-top: 0px;
+	margin-bottom: 0px; */
+}
+
+#container_month_chart_right{
+	height:200px; 
+}
+
+
+@media (max-width: 767px) {  
+    /*在小于768像素的屏幕里,这里的样式才生效*/  
+    #month_start{
+    	font-size: 10px;
+    }
+    
+    
+    #yearLab,#monthLab{
+		font-size: 15px;
+		color: white;
+	}
+	
+	    .chooseSpan{
+		font-size:10px;
+		text-align:center;
+	}
+    
+}  
+@media (min-width: 768px) and (max-width: 991px) {  
+    /*在768和991像素之间的屏幕里,这里的样式才生效*/  
+    #month_start{
+    	font-size: 10px;
+    }
+    
+
+}  
+@media (min-width: 992px) and (max-width: 1199px) {  
+    /*在992和1199像素之间的屏幕里,这里的样式才生效*/  
+    #month_start{
+    	font-size: 10px;
+    }
+}  
+@media (min-width: 1200px) {  
+    /*在大于1200像素的屏幕里,这里的样式才生效*/ 
+     #month_start{
+    	font-size: 20px;
+    } 
+    
+    #yearLab,#monthLab{
+		font-size: 25px;
+		color: white;
+	}
+	
+	.chooseSpan{
+		font-size:22px;
+		text-align:center;
+	}
+}  

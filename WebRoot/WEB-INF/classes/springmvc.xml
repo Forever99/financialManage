@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+        http://www.springframework.org/schema/mvc 
+        http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd
+        http://www.springframework.org/schema/context 
+        http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+
+	<!-- 配置controller扫描包 使用组件扫描器省去在spring容器配置每个Controller类的繁琐。 -->
+	<context:component-scan base-package="cn.zhku.jsj144.zk.financialManage.controller" />
+
+
+	<!-- 配置注解式处理器映射器 -->
+	<!-- <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping"/> -->
+	<!-- 配置注解式处理器适配器 -->
+	<!-- <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter"/> -->
+
+	<!-- SpringMVC使用<mvc:annotation-driven> 自动加载RequestMappingHandlerMapping和RequestMappingHandlerAdapter -->
+	<!-- 配置注解驱动 -->
+	<mvc:annotation-driven />
+	
+	<!-- 配置视图解析器 
+		prefix="/WEB_INF/jsp/"  ,suffix=".jsp"  ,viewname="test"
+		实际路径："/WEB-INF/jsp/test.jsp"
+	-->
+<!-- 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"> -->
+		<!-- 配置逻辑视图的前缀 -->
+<!-- 		<property name="prefix" value="/WEB-INF/jsp/"/> -->
+		<!-- 配置逻辑视图的后缀 -->
+<!-- 		<property name="suffix" value=".jsp"/> -->
+<!-- 	</bean> -->
+
+
+	<!--配置拦截器 拦截除了exceptUrls内的所有请求-->  
+    <mvc:interceptors>  
+    	
+        <mvc:interceptor> <!-- 前台登录 拦截器--> 
+            <mvc:mapping path="/**"/>  
+            <bean  class="cn.zhku.jsj144.zk.financialManage.interceptor.LoginInterceptor">  
+                <property name="exceptUrls">  
+                    <list>  
+                        <value>/user/**</value>  
+                        <value>/index.jsp</value> 
+                         <value>/regist.jsp </value>  
+                         <value>/userManage/**</value><!-- 后台的全部忽略 -->
+                         <value>/categoryManage/**</value>
+                         <value>/newsManage/**</value>
+                    </list>  
+                </property>  
+            </bean>  
+        </mvc:interceptor>  
+        
+        <mvc:interceptor><!-- 文件类型拦截器-->
+	        <!-- /**表示所有URL和子URL路径 -->
+	        <mvc:mapping path="/**" />
+	        <!-- 配置自定义的文件上传类型限制拦截器 -->
+	        <bean class="cn.zhku.jsj144.zk.financialManage.interceptor.FileTypeInterceptor" />
+    	</mvc:interceptor>
+    </mvc:interceptors>  
+    
+    
+    <!-- 文件上传解析器,id必须设置为multipartResolver -->
+	<bean id="multipartResolver"
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<!-- 设置文件上传大小  5m 5*1024*1024-->
+		<property name="maxUploadSize" value="5000000"/>
+	</bean>
+	
+	
+    
+</beans>

@@ -1,0 +1,141 @@
+@CHARSET "UTF-8";
+
+h3{
+	text-align: left;
+}
+.topFont{
+	margin-bottom:10px;
+}
+
+#bugdetbtn{
+	text-align: center;
+	vertical-align: center;
+}
+
+.bottomContent{
+	margin-top:0px;
+}
+
+
+/* .centerContent{
+	height:350px;
+	
+} */
+.center_top{
+	margin-bottom:100px;
+}
+
+.center_bottom{
+	margin-top:100px;
+}
+
+#leftSpan{/*编辑 和删除 设置间距*/
+	margin-right:10px;	
+}
+/* #rightFont{
+	background-color:red;
+	width:100%;
+	height:350px;
+	text-align:center;
+	line-height: 175px;
+} */
+
+#row_center{
+	margin-top:0px;
+}
+#more{
+	position: absolute;
+    top: 50%;
+    left:0px;
+    padding-top: 50px;
+}
+
+/*添加预算模态框  编辑预算*/
+#Add_modal,#edit_modal{
+	margin-top:100px;
+}
+#addmsg,#editmsg{
+	color:red;
+	font-size:18px;
+}
+
+/*媒体查询*/
+
+
+@media (max-width: 767px) {  
+    /*在小于768像素的屏幕里,这里的样式才生效*/  
+    .try{
+		font-size:10px;
+	}
+	.try2{
+		font-size:10px;
+	}
+	
+	#redBudget{/*预算*/
+		font-size:13px;
+	}
+	
+	#topTitle{
+		font-size:14px;
+	}
+	
+	.bigFont{
+		font-size:15px;
+	}
+	
+	.smallFont{
+		font-size:7px;
+	}
+	
+	#container_budget{
+		height:130px;
+	}
+	
+}  
+@media (min-width: 768px) and (max-width: 991px) {  
+    /*在768和991像素之间的屏幕里,这里的样式才生效*/  
+    .try{
+		font-size:15px;
+	}
+	.try2{
+		font-size:25px;
+	}
+}  
+@media (min-width: 992px) and (max-width: 1199px) {  
+    /*在992和1199像素之间的屏幕里,这里的样式才生效*/  
+    .try{
+		font-size:15px;
+	}
+	.try2{
+		font-size:25px;
+	}
+}  
+@media (min-width: 1200px) {  
+    /*在大于1200像素的屏幕里,这里的样式才生效*/  
+    .try{
+		font-size:25px;
+	}
+	.try2{
+		font-size:25px;
+	}
+	
+	#redBudget{/*预算*/
+		font-size:25px;
+	}
+	
+	#topTitle{
+	font-size:25px;
+	}
+	
+	.bigFont{
+	font-size:25px;
+	}
+	
+	.smallFont{
+	font-size:15px;
+	}
+	
+	#container_budget{
+		height:200px;
+	}
+}  

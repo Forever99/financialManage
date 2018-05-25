@@ -1,0 +1,320 @@
+@CHARSET "UTF-8";
+
+/*1、导航栏设置*/
+.navbar-default { /*导航栏设置*/
+	/* background-color: white; */
+	
+}
+
+.navbar-brand { /*导航栏logo信息设置*/
+	font-size: 20px;
+	/* font-family: "宋体"; */
+	margin-bottom: 0px;
+	/* background-color:gold; */
+}
+
+#user_setting {
+	padding-top: 8px;
+}
+
+.dropdown-toggle { /*用户设置  下拉菜单*/
+	background-color: #F8F8F8;
+}
+
+/*2、中间内容设置*/
+.navbar {
+	margin-bottom: 5px;
+}
+
+.nav-pills li.active a {
+	background-color: grey;
+}
+
+.nav-pills li.active a:hover {
+	background-color: black;
+}
+
+/*对条件查询表单的设置*/
+.panel-body {
+	border-style: none;
+	text-align: center;
+}
+
+#year_month {
+	font-size: 12px;
+	color: green;
+	text-align: center;
+}
+
+h3 { /*收支数据*/
+	color: grey;
+	text-align: center;
+	margin-top: 0px; /*上边距*/
+	margin-bottom: 5px;
+}
+
+.mytable { /*控制收支明细table的宽高*/
+	/*通过计算table 与html页面的高度的比值，从而计算出来的*/
+	/* height:65%; */ /*高度 设置成百分比，固定高度 ，为了固定分页的位置  61.2%*/
+	height: 370px; /*高度 设置成固定高度 ，为了固定分页的位置*/
+	/* width:auto; */
+}
+
+.table {
+	margin-bottom: 2px;
+}
+
+th {
+	text-align: center;
+	background-color: #CCF4D9;
+}
+
+tr {
+	text-align: center;
+}
+
+.pagination { /*分页标签设置*/
+	margin-top: 10px;
+	margin-bottom: 2px;
+}
+
+.zi {
+	font-size: 30px;
+}
+
+/* #add {
+	margin-left: 40px;
+} */
+#h1label {
+	background: red;
+	font-size: 30px;
+	color: white;
+}
+
+/* #income_form .form-group div{
+	margin-bottom:30px;
+	width: 500px;
+} */
+
+/* #submit_dis_reset,#submit_dis_reset2{重置，提交间距
+	margin-left: 20%;
+} */
+#Add_income_modal_dialog { /*添加收入类型模态框*/
+	width: 300px;
+	margin: auto;
+}
+
+#Add_income_modal {
+	width: 320px;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#add_income_category_msg { /*添加收入类型提示信息*/
+	color: red;
+	font-size: 20px;
+}
+
+/*添加收入数据相关*/
+.add_income_msg { /*添加收入类型提示信息*/
+	color: red;
+	font-size: 20px;
+	text-align: center;
+}
+
+/*------------------------------------------------------------------------------------------------------*/
+/*支出相关*/
+#Add_spend_modal_dialog { /*添加支出类型模态框*/
+	width: 300px;
+	margin: auto;
+}
+
+#Add_spend_modal {
+	width: 320px;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#add_spend_category_msg { /*添加支出类型提示信息*/
+	color: red;
+	font-size: 20px;
+}
+
+/*添加支出数据相关*/
+.add_spend_msg { /*添加支出类型提示信息*/
+	color: red;
+	font-size: 20px;
+	text-align: center;
+}
+
+/*3、右侧栏目设置 #remind-column*/
+/* 
+#news-column{新闻栏
+	margin-top:10px;
+}
+
+.card-body-item{
+	display: block;
+	margin: 10px;
+} 
+*/
+.side-bar-card { /*提醒栏 */
+	background: #D1D1D1;
+	padding: 10px 0; /*上下 10px  左右 0px*/
+}
+
+.side-bar-card .card-title,.side-bar-card .card-body .list .item {
+	padding: 10px 15px;
+}
+
+.side-bar-card .card-title {
+	font-size: 18px;
+	font-weight: bold;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.side-bar-card .card-body .list .item:hover { /*鼠标悬停是改变颜色*/
+	background: #D1D1D1;
+}
+
+.card-body .list .item .title {
+	padding-bottom: 5px;
+}
+
+input[readonly],.form-control[readonly] {
+	background-color: white;
+}
+
+/*媒体查询*/
+@media ( max-width : 767px) {
+	/*在小于768像素的屏幕里,这里的样式才生效*/
+	th {
+		font-size: 6px;
+	}
+	td {
+		font-size: 8px;
+	}
+	#toeditPage,#toDelete {
+		font-size: 6px;
+	}
+	h3 {
+		font-size: 10px;
+	}
+	.pagination-lg>li>a {
+		padding: 2px 2px;
+		font-size: 10px;
+	}
+	#attYearMonth {
+		background: white;
+		width:150px;
+	}
+	
+	label>input.btn{
+		padding: 2px 2px;
+		font-size: 12px;
+	}
+	
+	.panel-body{
+		margin-bottom: 2px;
+		padding: 2px;
+	}
+	
+	#shouzhi_top{
+		margin-top:5px;
+	}
+
+	/*收入记账*/
+	h1{
+		font-size: 15px;
+	}
+	
+	hr {
+	    margin-top: 2px;
+	    margin-bottom: 2px;
+	    border: 0;
+	    border-top: 1px solid #eee;
+	}
+	
+	#add_shouru{
+		padding:5px 0px;
+	}
+	
+	#add_zhichu{
+		padding:5px 0px;
+	}
+	
+	.btn-lg{
+		font-size: 10px;
+		text-align: center;
+	}
+	
+	#msgLabel{
+		font-size: 10px;
+	}
+	
+	.input-group-addon{
+		font-size: 10px;
+	}
+	
+	.form-control{
+		font-size: 10px;
+		padding: 0px 0px;
+	}
+	
+	.form-group {
+		margin-bottom: 5px;
+	}
+	
+	#msgSpendLabel{
+		font-size:10px;
+	}
+}
+
+@media ( min-width : 768px) and (max-width: 991px) {
+	/*在768和991像素之间的屏幕里,这里的样式才生效*/
+}
+
+@media ( min-width : 992px) and (max-width: 1199px) {
+	/*在992和1199像素之间的屏幕里,这里的样式才生效*/
+	#attYearMonth {
+		background: white;
+		height: 34px;
+		padding: 6px 12px;
+		font-size: 14px;
+		line-height: 1.42857143;
+		color: #555;
+		background-color: #fff;
+		background-image: none;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+	}
+}
+
+@media ( min-width : 1200px) {
+	/*在大于1200像素的屏幕里,这里的样式才生效*/
+	#attYearMonth {
+		background: white;
+		height: 34px;
+		width:197px;
+		padding: 6px 12px;
+		font-size: 14px;
+		line-height: 1.42857143;
+		color: #555;
+		background-color: #fff;
+		background-image: none;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+	}
+	
+	#msgLabel{
+		font-size: 20px;
+	}
+	
+	#msgSpendLabel{
+		font-size:20px;
+	}
+	
+}

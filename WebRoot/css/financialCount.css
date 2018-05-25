@@ -1,0 +1,60 @@
+@CHARSET "UTF-8";
+
+/*年度统计表设置   &&   月份统计表设置    &&  时间统计设置*/
+#yearTitle,#monthTitle,#dayTitle{
+	background-color: #24B9EC;
+}
+
+
+
+#yearDiv,#monthDiv,#dayDiv{
+	margin-left:0px;
+	text-align: left;
+	margin-top:4px;
+}
+
+
+
+.yearInput,.monthInput,.dayInput{
+	height:34px;
+	width:100px;
+}
+
+
+@media (max-width: 767px) {  
+    /*在小于768像素的屏幕里,这里的样式才生效*/  
+   .nav-pills>li{
+    	font-size: 8px;
+    }
+    
+    #yearLab,#monthLab,#dayLab{
+		font-size: 10px;
+		color: white;
+	}
+	
+	.chooseSpan{
+		font-size:15px;
+		text-align:center;
+	}
+	
+	#yearSelect{
+		font-size:10px;
+	}
+}  
+@media (min-width: 768px) and (max-width: 991px) {  
+    /*在768和991像素之间的屏幕里,这里的样式才生效*/  
+}  
+@media (min-width: 992px) and (max-width: 1199px) {  
+    /*在992和1199像素之间的屏幕里,这里的样式才生效*/  
+}  
+@media (min-width: 1200px) {  
+    /*在大于1200像素的屏幕里,这里的样式才生效*/  
+    #yearLab,#monthLab,#dayLab{
+		font-size: 25px;
+		color: white;
+	}
+	.chooseSpan{
+		font-size:20px;
+		text-align:center;
+	}
+}  

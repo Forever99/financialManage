@@ -1,0 +1,46 @@
+@CHARSET "UTF-8";
+
+/*1、导航栏设置*/
+.navbar-default{/*导航栏设置*/
+	/* background-color: white; */
+}
+
+.navbar-brand{/*导航栏logo信息设置*/
+	font-size: 20px;
+	/* font-family: "宋体"; */
+	margin-bottom:0px;
+	/* background-color:gold; */
+}
+
+#user_setting{
+	padding-top: 8px;
+}
+
+.dropdown-toggle{/*用户设置  下拉菜单*/
+	background-color:#F8F8F8;	
+}
+
+
+
+/*2、中间内容设置*/
+
+/* .navbar{
+	margin-bottom: 0px;
+}
+ */
+.nav-pills li.active a{
+	background-color:grey;
+}
+
+.nav-pills li.active a:hover{
+	background-color:black;
+}
+
+.container{
+	margin-bottom: 0px;
+}
+
+#msgLabel{
+	color:red;
+}
+
