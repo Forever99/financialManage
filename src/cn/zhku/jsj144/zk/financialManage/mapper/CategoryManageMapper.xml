@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.zhku.jsj144.zk.financialManage.mapper.CategoryManageMapper">
+
+	<!-- 查询收支类别总记录数 -->
+	<select id="findCategorysCount" parameterType="ShouzhiCategory" resultType="int">
+		select count(*) from shouzhi_category 
+		<where>
+			<if test="parent_category!='' and parent_category!=null">
+				and parent_category=#{parent_category}
+			</if>
+			<if test="son_category!='' and son_category!=null">
+				and son_category like '%${son_category}%'
+			</if>
+		</where>
+	</select>
+	
+	<!--分页查询收支类别当前页记录列表  -->
+	<select id="findCategorysCurrentPageList" parameterType="map" resultType="ShouzhiCategory">
+		select * from shouzhi_category 
+		<where>
+			<if test="shouzhiCategory.parent_category!='' and shouzhiCategory.parent_category!=null">
+				and parent_category=#{shouzhiCategory.parent_category}
+			</if>
+			<if test="shouzhiCategory.son_category!='' and shouzhiCategory.son_category!=null">
+				and son_category like '%${shouzhiCategory.son_category}%'
+			</if>
+		</where>
+		limit #{startPosition},#{pageRecord}
+	</select>
+	
+	
+	<!-- 判断当前子类型是否存在 -->
+	<select id="findCategory" parameterType="shouzhiCategory" resultType="shouzhiCategory">
+		select * from shouzhi_category 
+		where parent_category=#{parent_category} and son_category=#{son_category}
+	</select>
+	
+	<!-- 添加收支类型 -->
+	<insert id="insertCategory" parameterType="shouzhiCategory">
+		insert into shouzhi_category(parent_category,son_category) 
+		values(#{parent_category},#{son_category})
+	</insert>
+	
+	<!--通过id查询当前收支类型信息 -->
+	<select id="queryShouzhiCategoryById" parameterType="int" resultType="shouzhiCategory">
+		select * from shouzhi_category
+		where szcid=#{szcid}
+	</select>
+	
+	<!-- 编辑收支类型信息 -->
+	<update id="editShouzhiCategory" parameterType="shouzhiCategory">
+		update shouzhi_category
+		set son_category=#{son_category}
+		where szcid=#{szcid}
+	</update>
+	
+	<!-- 查找当前收支子类型下的收支记录 -->
+	<select id="countShouzhiRecord" parameterType="int" resultType="int">
+		select count(*) from shouzhi_record
+		where shouzhi_category_id=#{szcid}
+	</select>
+	
+	<!-- 删除收支子类型 -->
+	<delete id="deleteShouzhiCategory" parameterType="int">
+		delete from shouzhi_category
+		where szcid=#{szcid}
+	</delete>
+	
+	<!-- 当前所有收支子类型记录数 -->
+	<select id="countShouzhiCategorys" resultType="int">
+		select count(*) from shouzhi_category
+	</select>
+	
+</mapper>

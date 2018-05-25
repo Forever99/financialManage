@@ -1,0 +1,30 @@
+@CHARSET "UTF-8";
+
+.main-box{/*登录主框架*/
+	border:1px solid #e6e6e6;
+	margin:center center;/*整体 自动居中*/
+	margin-top:20%; /*上边距*/
+	padding:15px;/*内边距*/
+}
+
+#msgLabel{/*错误标签*/
+	color:red;
+}
+
+#icon{/*icon标签*/
+	width:30px;
+}
+.form-control{/*input标签*/
+	height:50px;
+}
+
+.loginbtn{/* 登录按钮 */
+	width:40%;
+	height:40px;
+} 
+
+.a{/*a标签设置*/
+	text-align:right;
+	margin-right:10px;
+}
+

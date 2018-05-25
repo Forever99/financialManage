@@ -1,0 +1,15 @@
+@CHARSET "UTF-8";
+
+#left{
+	width: 100px;
+}
+
+/*设置颜色*/
+ .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{
+     background-color: black;
+ }
+ 
+ .page-header{
+ 	margin-top: 0px;
+ }
+ 

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.zhku.jsj144.zk.financialManage.mapper.MemorandumMapper">
+
+	<!-- 添加备忘 -->
+	<insert id="addMemorandum" parameterType="Memorandum">
+		insert into memorandum(recordTime,thingPath,topFont,user_id) 
+		values(#{recordTime},#{thingPath},#{topFont},#{user_id})
+	</insert>
+	
+	<!-- 显示所有备忘录 -->
+	<select id="listMemorandum" parameterType="int" resultType="Memorandum">
+		select * from memorandum where user_id=#{uid} 
+		order by recordTime desc,mid desc
+	</select>
+	
+	<!-- 当前备忘录 -->
+	<select id="oneMemorandum" parameterType="Memorandum" resultType="Memorandum">
+		select * from memorandum where user_id=#{user_id} and mid=#{mid}
+	</select>
+	
+	<!-- 编辑备忘录 -->
+	<update id="editMemorandum" parameterType="Memorandum">
+		update memorandum set topFont=#{topFont}
+		where mid=#{mid}
+	</update>
+	
+	<!-- 删除备忘录 -->
+	<delete id="deleteMemorandum" parameterType="int">
+		delete from memorandum where mid=#{mid}
+	</delete>
+	
+	
+	<!-- 查询备忘录总记录数 -->
+	<select id="findMemorandumCount" parameterType="int" resultType="int">
+		select count(*) from memorandum where user_id=#{uid}
+	</select>
+
+	<!-- 分页查询,备忘录 的当前页记录列表 -->
+	<select id="findMemorandumList" parameterType="map" resultType="Memorandum">
+		select * from memorandum 
+		where user_id=#{uid}
+		order by recordTime desc,mid desc
+		limit #{startPosition},#{pageRecord}
+	</select>
+</mapper>

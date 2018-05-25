@@ -1,0 +1,60 @@
+@CHARSET "UTF-8";
+
+/*手机端适配问题：修改日期:2018-04-12*/
+
+.main-box{/*登录主框架*/
+	border:1px solid #e6e6e6;
+	/* width:400px;
+	height:430px; */
+	margin:center center;/*整体 自动居中*/
+	margin-top:20%; /*上边距*/
+	/*margin:300px;外边距*/
+	padding:15px;/*内边距*/
+}
+
+#msgLabel{/*错误标签*/
+	color:red;
+}
+
+#icon{/*icon标签*/
+	width:30px;
+}
+.form-control{/*input标签*/
+	height:50px;
+}
+
+.loginbtn{/* 登录按钮 */
+	width:40%;
+	height:40px;
+	/* margin-left:40px; */
+} 
+
+ .resetbtn{/* 重置按钮 */
+ 	width:40%;
+ 	height:40px;
+	/* width:100px; */
+	/* margin-left:40px; */
+	margin-left:15%;
+} 
+
+.a{/*a标签设置*/
+	text-align:right;
+	margin-right:10px;
+}
+
+/* #passwordModal{忘记密码模态框
+	width:400px;
+	width:100%;
+	margin:auto;
+	height:300px;
+}
+.modal-dialog{忘记密码窗体
+	width:100%;
+	margin-top:20px;
+} */
+
+#forgetmsg{/*忘记密码框错误提示*/
+	color:red;
+	font-size: 4;
+	font-family: "宋体";
+}

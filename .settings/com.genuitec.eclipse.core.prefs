@@ -1,0 +1,3 @@
+eclipse.preferences.version=1
+validator.Checked=WebRoot/jedate/jquery.jedate.js,WebRoot/jedate/jquery.jedate.min.js,WebRoot/jedate/jquery-1.7.2.js,WebRoot/highcharts/js/jquery.min.js,WebRoot/bootstrap/js/jquery.min.js,WebRoot/jquery-easyui-1.5.4.2/locale/easyui-lang-zh_CN.js,WebRoot/jquery/jquery.min.js,WebRoot/app/js/jquery-2.1.1.min.js,WebRoot/highcharts/jquery.min.js,WebRoot/jquery-easyui-1.5.4.2/jquery.min.js,WebRoot/ueditor,WebRoot/bootstrap/cal/jquery-2.1.1.min.js
+validator.Unchecked=
