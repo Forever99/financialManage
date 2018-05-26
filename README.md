@@ -69,4 +69,6 @@
 
 项目效果图如下：
 登录效果
-![image](https://github.com/Forever99/financialManage/tree/master/image/login.jpg)
+![image](https://github.com/Forever99/financialManage/tree/master/image/login.jpg)[失败]
+![image](https://github.com/Forever99/financialManage/raw/master/image/login.jpg)
+
