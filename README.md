@@ -78,7 +78,7 @@
 ![image](https://github.com/Forever99/financialManage/raw/master/image/login.jpg)
 ###### 财务管理
 ![image](https://github.com/Forever99/financialManage/raw/master/image/financialManage.jpg)
-######财务统计<br/>
+###### 财务统计<br/>
 1、综合图
 ![image](https://github.com/Forever99/financialManage/raw/master/image/financialCount.jpg)
 2、柱形图
