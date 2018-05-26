@@ -67,8 +67,39 @@
 	 添加财务新闻
 	 删除财务新闻信息
 
-项目效果图如下：
-登录效果
-![image](https://github.com/Forever99/financialManage/tree/master/image/login.jpg)[失败]
-![image](https://github.com/Forever99/financialManage/raw/master/image/login.jpg)
+添加图片测试：
+(https://github.com/Forever99/financialManage/tree/master/image/login.jpg)[失败]
+(https://github.com/Forever99/financialManage/raw/master/image/login.jpg)[成功]   
+学习博客教程：https://blog.csdn.net/u012150179/article/details/24605419
 
+项目效果图如下：【系统兼容PC端和手机端】
+PC端的效果展示如下：
+登录效果
+![image](https://github.com/Forever99/financialManage/raw/master/image/login.jpg)
+财务管理
+![image](https://github.com/Forever99/financialManage/raw/master/image/financialManage.jpg)
+财务统计
+1、综合图
+![image](https://github.com/Forever99/financialManage/raw/master/image/financialCount.jpg)
+2、柱形图
+![image](https://github.com/Forever99/financialManage/raw/master/image/financialCount2.jpg)
+3、饼图
+![image](https://github.com/Forever99/financialManage/raw/master/image/financialCount3.jpg)
+4、面积图
+![image](https://github.com/Forever99/financialManage/raw/master/image/financialCount4.jpg)
+5、金字塔形图
+![image](https://github.com/Forever99/financialManage/raw/master/image/financialCount5.jpg)
+6、圆环图
+![image](https://github.com/Forever99/financialManage/raw/master/image/financialCount6.jpg)
+7、雷达图
+![image](https://github.com/Forever99/financialManage/raw/master/image/financialCount7.jpg)
+财务分析
+![image](https://github.com/Forever99/financialManage/raw/master/image/financialAnalysis.jpg)
+财务预算 
+![image](https://github.com/Forever99/financialManage/raw/master/image/financialBudget.jpg)
+心愿单
+![image](https://github.com/Forever99/financialManage/raw/master/image/wishlist.jpg)
+备忘录
+![image](https://github.com/Forever99/financialManage/raw/master/image/memorandum.jpg)
+财务新闻
+![image](https://github.com/Forever99/financialManage/raw/master/image/financialNews.jpg)
