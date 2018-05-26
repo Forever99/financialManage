@@ -2,7 +2,7 @@
 基于web的大学生个人财务管理系统
 本web系统，设计之初就是为了兼容手机和电脑的，所以系统设计成响应式的页面，在手机和web端都可以完美的展示出来。
 此外，系统的开发，兼顾了普通使用者和管理员，所以系统分为了两部分，分别是：前台部分，以及后台部分。划分原因：根据不同的用户而划分的，前台部分：游客，普通用户使用；后台部分：管理员使用。其中前台部分是本系统的主要使用人群，而后台部分是为了维护本系统的一些数据而设计的。
-#####对于前台部分，其中的主要功能分为以下几个模块：<br/>
+##### 对于前台部分，其中的主要功能分为以下几个模块：<br/>
 1.	用户模块：
 *	 用户注册
 *	 用户登录
@@ -46,7 +46,7 @@
 10.	计算器模块
 *	 简易计算
 
-#####对于后台部分，其中的主要功能分为以下几个模块：<br/>
+##### 对于后台部分，其中的主要功能分为以下几个模块：<br/>
 1.管理员模块
 *	 用户登录
 *	 用户注销<br/>
@@ -72,11 +72,11 @@
 (https://github.com/Forever99/financialManage/raw/master/image/login.jpg)[成功]   
 学习博客教程：https://blog.csdn.net/u012150179/article/details/24605419
 
-####项目效果图如下：【系统兼容PC端和手机端】<br/>
-#####PC端的效果展示如下：<br/>
-######登录效果
+#### 项目效果图如下：【系统兼容PC端和手机端】<br/>
+##### PC端的效果展示如下：<br/>
+###### 登录效果
 ![image](https://github.com/Forever99/financialManage/raw/master/image/login.jpg)
-######财务管理
+###### 财务管理
 ![image](https://github.com/Forever99/financialManage/raw/master/image/financialManage.jpg)
 ######财务统计<br/>
 1、综合图
@@ -93,13 +93,13 @@
 ![image](https://github.com/Forever99/financialManage/raw/master/image/financialCount6.jpg)
 7、雷达图
 ![image](https://github.com/Forever99/financialManage/raw/master/image/financialCount7.jpg)
-######财务分析
+###### 财务分析
 ![image](https://github.com/Forever99/financialManage/raw/master/image/financialAnalysis.jpg)
-######财务预算 
+###### 财务预算 
 ![image](https://github.com/Forever99/financialManage/raw/master/image/financialBudget.jpg)
-######心愿单
+###### 心愿单
 ![image](https://github.com/Forever99/financialManage/raw/master/image/wishlist.jpg)
-######备忘录
+###### 备忘录
 ![image](https://github.com/Forever99/financialManage/raw/master/image/memorandum.jpg)
-######财务新闻
+###### 财务新闻
 ![image](https://github.com/Forever99/financialManage/raw/master/image/financialNews.jpg)
