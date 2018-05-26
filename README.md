@@ -74,6 +74,7 @@
 
 #### 项目效果图如下：【系统兼容PC端和手机端】<br/>
 ##### PC端的效果展示如下：<br/>
+##### PC端--前台部分：
 ###### 登录效果
 ![image](https://github.com/Forever99/financialManage/raw/master/image/login.jpg)
 ###### 财务管理
@@ -103,3 +104,28 @@
 ![image](https://github.com/Forever99/financialManage/raw/master/image/memorandum.jpg)
 ###### 财务新闻
 ![image](https://github.com/Forever99/financialManage/raw/master/image/financialNews.jpg)
+
+##### PC端--后台部分：
+###### 个人用户管理
+![image](https://github.com/Forever99/financialManage/raw/master/image/userManage.jpg)
+###### 收支类别管理
+![image](https://github.com/Forever99/financialManage/raw/master/image/categoryManage.jpg)
+###### 财务新闻管理
+![image](https://github.com/Forever99/financialManage/raw/master/image/newsManage.jpg)
+
+##### 手机端的效果展示如下：<br/>
+###### 登录效果
+![image](https://github.com/Forever99/financialManage/raw/master/image/phone_login.jpg)
+###### 手机侧边栏效果
+![image](https://github.com/Forever99/financialManage/raw/master/image/phone_navbar.jpg)
+###### 收入记账
+![image](https://github.com/Forever99/financialManage/raw/master/image/phone_income.jpg)
+###### 财务管理
+![image](https://github.com/Forever99/financialManage/raw/master/image/phone_financialManage.jpg)
+###### 财务统计
+1、饼图
+![image](https://github.com/Forever99/financialManage/raw/master/image/phone_financialCount1.jpg)
+2、面积图
+![image](https://github.com/Forever99/financialManage/raw/master/image/phone_financialCount2.jpg)
+3、条形图
+![image](https://github.com/Forever99/financialManage/raw/master/image/phone_financialCount1.jpg)
