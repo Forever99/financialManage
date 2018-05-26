@@ -66,3 +66,7 @@
 	 修改财务新闻信息
 	 添加财务新闻
 	 删除财务新闻信息
+
+项目效果图如下：
+登录效果
+![image](https://github.com/Forever99/financialManage/tree/master/image/login.jpg)
